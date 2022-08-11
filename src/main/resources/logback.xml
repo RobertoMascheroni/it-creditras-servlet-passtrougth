@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{0} - %X - %msg%n</pattern>
+		</encoder>
+	</appender>
+    
+    <appender name="logFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+           <file>c:\logs\passtrougth\passtrougth.log</file>  
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">        
+  	        <fileNamePattern>C:\logs\passtrougth\passtrougth.%d.log</fileNamePattern> 
+	        <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+    </appender>
+<!--     <appender name="logFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+         	<file>E:\WebAppl\logs\passpasstrougth\passtrougth.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">        
+  	        <fileNamePattern>E:\WebAppl\logs\passpasstrougth\passtrougth.%d.log</fileNamePattern> 
+	        <maxHistory>30</maxHistory>
+	    </rollingPolicy>
+    </appender>
+ -->
+    <logger name="it.creditras.reverseproxy" level="debug" additivity="false">
+        <appender-ref ref="logFile" />
+    </logger>
+    
+	<logger name="it.creditras" level="INFO">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+	<root level="INFO">
+		<appender-ref ref="STDOUT" /> 
+	</root>
+</configuration>

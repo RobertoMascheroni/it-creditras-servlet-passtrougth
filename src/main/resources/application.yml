@@ -1,0 +1,1575 @@
+spring:
+   servlet:
+      multipart:
+         maxFileSize : 2048
+         maxRequestSize: 2048
+
+server:
+  port : 8081
+servlet-configurations:
+  urls: 
+    - /WorkFlow/*
+    - /InterfacciaServizi/*
+    - /crifGate/*
+    - /ServiziEsterniModular/*
+    - /ServiziModular/*    
+    - /modularLayer/*    
+    - /GateEncrypt/*
+    - /GateEncryptRetail/*    
+    - /EvaluationServiceWebApp/*
+    - /AbbinamentoIDM/*
+    - /modularRetailGate/*
+    - /gate/*
+    - /api/*
+  routes:   
+###########################################################################################################
+#      SERVER Q0 - crp
+###########################################################################################################
+#                 SM801089
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089      
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089    
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089    
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801089           
+###########################################################################################################
+#                 SM801239
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801239        
+###########################################################################################################
+#sm801062 
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pre2.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pre2.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: sm801062        
+###########################################################################################################
+#PC SVILUPPO
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: cpx-s8y73x0b81u
+###########################################################################################################
+#   SM801048
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801048              
+      
+###########################################################################################################
+#      SERVER PRODUZIONE
+###########################################################################################################
+#                 SM801080
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080      
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801080           
+             
+###########################################################################################################
+#                 SM801078
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078 
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801078                       
+###########################################################################################################
+#                 SM801076
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076 
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801076                      
+###########################################################################################################
+#                 SM801073
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801073          
+###########################################################################################################
+#                 SM801077
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801077          
+###########################################################################################################
+#                 SM801072
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801072          
+###########################################################################################################
+#                 SM801065
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801065          
+###########################################################################################################
+#                 SM801066
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801066              
+###########################################################################################################
+#                 SM801068
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801068          
+###########################################################################################################
+#                 SM801067
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801067              
+###########################################################################################################
+#                 SM801064
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064 
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-prod.cra-eks-prod.creditras.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064  
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://motorbank.unicredit.it
+      contentType: XML
+      contextPathType: root
+      serverName: SM801064                       
+
+
+###########################################################################################################
+#   Macchine di svilupppo
+###########################################################################################################
+###########################################################################################################
+#   H2013EUBA001A
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a              
+    -
+      source: /api/*
+      regexp: /api/
+      destination: https://bfferetail-blue-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2013euba001a
+
+###########################################################################################################
+#   h2016eugl017a
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a              
+    -
+      source: /api/*
+      regexp: /api/
+      destination: https://bfferetail-blue-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl017a
+###########################################################################################################
+#   h2016eugl271a
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a              
+    -
+      source: /api/*
+      regexp: /api/
+      destination: https://bfferetail-blue-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2016eugl271a
+###########################################################################################################
+#   h2015eugl057a
+###########################################################################################################
+    -
+      source: /AbbinamentoIDM/*
+      regexp: /AbbinamentoIDM/
+      destination: https://abbinamentoidm-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /EvaluationServiceWebApp/*
+      regexp: /EvaluationServiceWebApp/
+      destination: https://enginemotor-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /WorkFlow/*
+      regexp: /WorkFlow/
+      destination: https://workflow-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /InterfacciaServizi/*
+      regexp: /InterfacciaServizi/
+      destination: https://interfacciaservizi-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a    
+    -
+      source: /GateEncrypt/*
+      regexp: /GateEncrypt/
+      destination: https://gateencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /gate/*
+      regexp: /gate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /crifGate/*
+      regexp: /crifGate/
+      destination: https://crifgate-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /ServiziEsterniModular/*
+      regexp: /ServiziEsterniModular/
+      destination: https://serviziesternimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /ServiziModular/*
+      regexp: /ServiziModular/
+      destination: https://servizimodular-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /GateEncryptRetail/*
+      regexp: /GateEncryptRetail/
+      destination: https://gateretencrypt-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+    -
+      source: /modularRetailGate/*
+      regexp: /modularRetailGate/
+      destination: https://ibm-q0.uat.validazione.usinet.it
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a      
+    -
+      source: /modularLayer/*
+      regexp: /modularLayer/
+      destination: https://modularlayer-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a              
+    -
+      source: /api/*
+      regexp: /api/
+      destination: https://bfferetail-blue-pp.cra-eks-noprod.creditras-nonprod.ew3.aws.aztec.cloud.allianz
+      contentType: XML
+      contextPathType: root
+      serverName: h2015eugl057a
+       
+  logging_enabled: true
