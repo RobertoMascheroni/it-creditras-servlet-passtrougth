@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication
 @Import({ ProxyAutoConfiguration.class })
 @EnableDiscoveryClient
-public class Application /*extends SpringBootServletInitializer*/{
+public class Application extends SpringBootServletInitializer{
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
